@@ -1,6 +1,6 @@
 {
   "name": "webpack-simple-progress-plugin",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "webpack plugin for showing simple progress bar",
   "main": "index.js",
   "scripts": {
