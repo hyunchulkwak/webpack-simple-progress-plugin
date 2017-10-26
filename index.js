@@ -16,6 +16,10 @@ var progressOptions = {
 };
 
 function SimpleProgressPlugin(options) {
+  if (!process.stderr.isTTY) {
+    return function () {};
+  }
+
   if (options) {
     messageTemplate = options.messageTemplate || messageTemplate;
     progressOptions = objectAssign(progressOptions, options.progressOptions);
